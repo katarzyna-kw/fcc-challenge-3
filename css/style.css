@@ -11,10 +11,14 @@ header {
   
 li {
     list-style: none;
-}
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    border-bottom: 1px white;
+} 
   
 #nav-bar {
-    font-family: 'Poppins'; 'serif';
+    font-family: 'Poppins', 'sans-serif';
     font-size: 1em;
     font-weight: 500;
     text-transform: uppercase;
@@ -25,12 +29,28 @@ li {
     top: 0;
     height: 60px;
 }
-  
+
 .menu {
     list-style-type: none;
-    display: flex;
-    justify-content: space-evenly;
+    display: none;
+    padding-top: 20px;
+    padding-bottom: 0;
   }
+  
+  .active {
+    display: block;
+    color: firebrick;
+  }
+
+  #js-navbar-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #fff;
+    cursor: pointer;
+    font-size: x-large;
+  }
+  
   
 a {
     color: white;
@@ -158,6 +178,19 @@ footer {
   
   
 @media (min-width: 768px) {
+
+    .navbar-toggle {
+        display: none;
+    }
+    
+    .menu {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: -5px;
+      }
+    
+
     header a {
     font-size: 1.3em;
     }
@@ -192,4 +225,5 @@ footer {
     
     .product {
       width: calc(100% / 3);
+    }
 }

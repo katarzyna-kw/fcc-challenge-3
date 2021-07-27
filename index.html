@@ -4,13 +4,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Yeseva+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/d79a895327.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal" defer></script>
+    <script type="text/javascript" src="js/actions.js" defer></script>  
     <title>Polska Szkoła Wyszyńskiego</title>
 </head>
       
 <body>
     <header id="header">
         <nav id="nav-bar">
-            <ul class="menu">
+          <span class="navbar-toggle" id="js-navbar-toggle">
+            <i class="fas fa-bars"></i>
+          </span>
+            <ul class="menu" id="js-menu">
                 <li><a href="#about" class="nav-link">Informacja</a></li>
                 <li><a href="#about-four" class="nav-link">Video</a></li>
                 <li><a href="#zapisy" class="nav-link">Zapisy</a></li>
@@ -21,7 +27,7 @@
             <h1>,,Ucz się polskiego u Wyszyńskiego!"</h1>
         </div>
     </header>
-        <section id="about">
+        <section id="about" class="h-reveal">
           <h2>Informacja o szkole</h2>
           <div id="about-one">
       ,,Ucz się polskiego u Wyszyńskiego" jest ciągle żywe wśród nowych pokoleń polskich dzieci. Parafialna Szkoła Polska im.Stefana Kardynała Wyszyńskiego przy Bazylice Św. Jacka w Chicago to  niezastąpione miejsce dla polskich rodzin.
@@ -33,14 +39,14 @@
             <form id="form" action="https://www.freecodecamp.com/email-submit"><input name="email" id="email" type="email" placeholder="Wpisz swój adres email" required />
               <input id="submit" type="submit" value="Kliknij, aby uzyskać więcej informacji!" class="btn" />        
           </div>
-          <div id="about-four">
+          <div id="about-four" class="h-reveal">
       <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/K0_eqNqCFxA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </section>
         <div>
             <h2>Zapisy</h2>
         </div>
-        <section id="zapisy">
+        <section id="zapisy" class="h-reveal">
           <div class="product" id="friday">
             <div class="choice">Wybor 1</div>
             <h2>Piatek</h2>
