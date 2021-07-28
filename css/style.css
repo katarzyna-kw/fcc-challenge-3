@@ -1,24 +1,20 @@
 body {
     font-size: 16px;
-    font-family: 'Poppins'; sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
-  
-header {
+
+.header {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
 }
-  
-li {
+
+.menu li {
     list-style: none;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-align: center;
-    border-bottom: 1px white;
-} 
-  
-#nav-bar {
-    font-family: 'Poppins', 'sans-serif';
+}
+
+.nav-bar {
+    font-family: 'Poppins', 'serif';
     font-size: 1em;
     font-weight: 500;
     text-transform: uppercase;
@@ -32,81 +28,68 @@ li {
 
 .menu {
     list-style-type: none;
-    display: none;
-    padding-top: 20px;
-    padding-bottom: 0;
-  }
-  
-  .active {
-    display: block;
-    color: firebrick;
+    display: flex;
+    justify-content: space-evenly;
   }
 
-  #js-navbar-toggle {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    color: #fff;
-    cursor: pointer;
-    font-size: x-large;
-  }
-  
-  
-a {
+.menu a {
     color: white;
     text-decoration: none;
   }
-  
+
 a:hover {
     text-decoration: underline;
   }
-  
-header h1 {
+
+.header h1 {
     margin-top: 0;
   }
 
-#img-head {
+.img-head {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: column;
+    flex-flow: column wrap;
+    background-color: lightgreen;
 }
 
-img {
+.header-img {
     margin-top: 55px;
     margin-left: auto;
     margin-right: auto;
+    width: 100%;
+    align-items: stretch;
 }
-  
+
 h1 {
     display: flex;
     justify-content: center;
     text-align: center;
-    font-family: "Yeseva One"; serif;
+    font-family: "Yeseva One", serif;
     color: crimson;
     width: 100%;
 }
-  
+
 h2 {
     display: flex;
     justify-content: center;
     text-align: center;
-    font-family: "Yeseva One"; serif;
+    font-family: "Yeseva One", serif;
     color: RoyalBlue;
     width: 100%;
 }
-  
+
 #about {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
     margin-top: 0;
 }
-  
-#about-one,
-#about-two,
-#about-three,
-#about-four {
+
+.about-one,
+.about-two,
+.about-three,
+.about-four {
     display: flex;
     justify-content: center;
     flex-basis: 95%;
@@ -114,7 +97,7 @@ h2 {
     justify-content: center;
     margin-bottom: 20px;
 }
-  
+
 .btn {
     background-color: crimson;
     border-radius: 25px;
@@ -123,22 +106,26 @@ h2 {
     margin-top: 5px;
     margin-bottom: 10px;
     color: white;
-    font-family: 'Poppins'; sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 400;
 }
-  
+
 input {
     width: 95%;
     padding: 10px;
     font-family: 'Yeseva One';
 }
-  
+
 #zapisy {
     display: flex;
     flex-flow: column;
     justify-content: center;
 }
-  
+
+.zapisy-options li {
+    list-style: none;
+}
+
 .product {
     justify-content: center;
     margin: 0 1.3em 1.5em 1.3em;
@@ -150,24 +137,24 @@ input {
     border-width: 1px;
     text-align: center;
 }
-  
+
 .product ul {
     padding-left: 0;
     padding-bottom: 10px;
 }
-  
-  
+
+
 .choice {
     font-family: 'Yeseva One'; serif;
     font-weight: light;
     font-size: 1.2em;
     padding-top: .5em;
 }
-  
+
 h2 {
     color: RoyalBlue;
 }
-  
+
 footer {
     text-align: center;
     font-size: .7em;
@@ -175,54 +162,48 @@ footer {
     color: DimGrey;
     text-transform: uppercase;
 }
-  
-  
+
+
 @media (min-width: 768px) {
 
-    .navbar-toggle {
-        display: none;
+    .header {
+        flex-direction: row;
+        justify-content: space-around;
     }
-    
-    .menu {
-        list-style-type: none;
-        display: flex;
-        justify-content: space-evenly;
-        margin-top: -5px;
-      }
-    
 
-    header a {
+    
+    .header a {
     font-size: 1.3em;
     }
-    
+
     #about {
       justify-content: space-evenly;
       align-items: center;
     }
-    
-    #about-one,
-    #about-two,
-    #about-three {
+
+    .about-one,
+    .about-two,
+    .about-three {
       flex-basis: 27%;  
     }
-    
-    #about-two {
+
+    .about-two {
           border-left: 1px solid #eee;
           border-right: 1px solid #eee;
           padding: 0 20px;
     }
-    
-    #img-head {
+
+    .img-head {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-flow: row
     }
-    
+
     #zapisy {
       flex-direction: row;
     }
-    
+
     .product {
       width: calc(100% / 3);
     }
