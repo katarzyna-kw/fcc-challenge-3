@@ -1,82 +1,79 @@
 body {
-    font-size: 16px;
     font-family: 'Poppins', sans-serif;
+    font-size: 16px;
 }
 
-.header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.menu li {
-    list-style: none;
-}
-
-.nav-bar {
-    font-family: 'Poppins', 'serif';
-    font-size: 1em;
-    font-weight: 500;
-    text-transform: uppercase;
-    color: White;
+nav {
     width: 100%;
     background: linear-gradient(100deg, RoyalBlue, DeepSkyBlue);
-    position: fixed;
+    position: sticky;
+    display: block;
     top: 0;
-    height: 60px;
+    height: 100px;
 }
 
-.menu {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-evenly;
+#js-navbar-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 3.5em;
   }
 
-.menu a {
+.ul-menu {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    background: linear-gradient(100deg, RoyalBlue, DeepSkyBlue);
+    padding-bottom: 30px;
+}
+  
+.active {
+    display: flex;
+}
+
+.ul-menu li {
+    list-style: none;
+    font-size: 70px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: white;
+    margin: 0;
+}
+
+.ul-menu li a {
     color: white;
     text-decoration: none;
   }
 
-a:hover {
+.ul-menu li a:hover {
     text-decoration: underline;
-  }
+}
 
-.header h1 {
-    margin-top: 0;
-  }
-
-.img-head {
+header {
     display: flex;
+    flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    flex-flow: column wrap;
-    background-color: lightgreen;
 }
 
 .header-img {
-    margin-top: 55px;
+    margin-top: 15px;
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
+    width: 90%;
     align-items: stretch;
 }
 
-h1 {
-    display: flex;
-    justify-content: center;
+.header-text {
     text-align: center;
     font-family: "Yeseva One", serif;
     color: crimson;
-    width: 100%;
-}
-
-h2 {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    font-family: "Yeseva One", serif;
-    color: RoyalBlue;
-    width: 100%;
+    font-size: 70px;
+    padding-top: 20px;
+    margin-top: 0;
 }
 
 #about {
@@ -86,16 +83,104 @@ h2 {
     margin-top: 0;
 }
 
-.about-one,
-.about-two,
-.about-three,
-.about-four {
+#about h2 {
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: "Yeseva One", serif;
+    color: RoyalBlue;
+    width: 100%;
+}
+
+#about-one,
+#about-two,
+#about-three,
+#about-four {
     display: flex;
     justify-content: center;
     flex-basis: 95%;
-    width: 95%;
+    width: 90%;
     justify-content: center;
     margin-bottom: 20px;
+    font-size: 24px;
+}
+
+#submit {
+    background-color: crimson;
+    border-radius: 25px;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    margin: 30px 0 30px 0;
+}
+
+input {
+    padding: 10px;
+    font-family: 'Yeseva One', serif;
+    font-size: 40px;
+    background-color: rgb(240, 234, 234);
+    width: 90%;
+}
+
+#video {
+    width: 100%;
+}
+
+#zapisy {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#zapisy h2 {
+    font-size: 60px;
+    text-align: center;
+    font-family: "Yeseva One", serif;
+    color: RoyalBlue;
+}
+
+.zapisy-options li {
+    list-style: none;
+}
+
+.product {
+    justify-content: center;
+    margin: 0 1.3em 1.5em 1.3em;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    background-color: lightgray;
+    border-radius: 30px;
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+    width: 75%;
+}
+
+.product ul {
+    padding-left: 0;
+    padding-bottom: 10px;
+    font-size: 40px;
+}
+
+.choice {
+    font-family: 'Yeseva One', serif;
+    font-size: 60px;
+    padding-top: .5em;
 }
 
 .btn {
@@ -108,72 +193,21 @@ h2 {
     color: white;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
-}
-
-input {
-    width: 95%;
-    padding: 10px;
-    font-family: 'Yeseva One';
-}
-
-#zapisy {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-}
-
-.zapisy-options li {
-    list-style: none;
-}
-
-.product {
-    justify-content: center;
-    margin: 0 1.3em 1.5em 1.3em;
-    padding-top: 10px;
-    padding-bottom: 15px;
-    background-color: LightGrey;
-    border-radius: 30px;
-    border-style: solid;
-    border-width: 1px;
-    text-align: center;
-}
-
-.product ul {
-    padding-left: 0;
-    padding-bottom: 10px;
-}
-
-
-.choice {
-    font-family: 'Yeseva One'; serif;
-    font-weight: light;
-    font-size: 1.2em;
-    padding-top: .5em;
-}
-
-h2 {
-    color: RoyalBlue;
+    font-size: 50px;
 }
 
 footer {
     text-align: center;
-    font-size: .7em;
+    font-size: 1.6em;
     margin-top: 40px;
     color: DimGrey;
     text-transform: uppercase;
 }
 
-
-@media (min-width: 768px) {
-
-    .header {
-        flex-direction: row;
+/* @media screen and (min-width: 768px) {
+    .nav-bar {
+        flex-flow: row wrap;
         justify-content: space-around;
-    }
-
-    
-    .header a {
-    font-size: 1.3em;
     }
 
     #about {
@@ -197,7 +231,7 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-flow: row
+        flex-flow: row;
     }
 
     #zapisy {
@@ -207,4 +241,4 @@ footer {
     .product {
       width: calc(100% / 3);
     }
-}
+} */

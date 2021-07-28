@@ -1,47 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta http-equiv="Content-Language" content="pl">
+  <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Yeseva+One&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d79a895327.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/actions.js" defer></script>
     <title>Polska Szkoła Wyszyńskiego</title>
 </head>
 
 <body>
-  <header class="header">
-    <nav class="nav-bar">
-      <ul class="menu">
-        <li><a href="#about" class="nav-link">Informacja</a></li>
-        <li><a href="#about-four" class="nav-link">Video</a></li>
-        <li><a href="#zapisy" class="nav-link">Zapisy</a></li>
-      </ul>
-    </nav>
-    <div class="img-head">
-      <img class="header-img" src="images/logo-1.png">
-      <h1>,,Ucz się polskiego u Wyszyńskiego!"</h1>
-    </div>
+  <nav id="navbar">
+    <span class="navbar-toggle" id="js-navbar-toggle">
+      <i class="fas fa-bars"></i>
+    </span>
+    <ul class="ul-menu" id="js-menu">
+      <li><a href="#about" class="nav-link">Informacja</a></li>
+      <li><a href="#about-four" class="nav-link">Video</a></li>
+      <li><a href="#zapisy" class="nav-link">Zapisy</a></li>
+    </ul>
+  </nav>
+  <header>
+    <img class="header-img" src="images/logo-1.png">
+    <h1 class="header-text">,,Ucz się polskiego u Wyszyńskiego!"</h1>
   </header>
   <section id="about">
     <h2>Informacja o szkole</h2>
-    <div class="about-one">
+    <div id="about-one">
       ,,Ucz się polskiego u Wyszyńskiego" jest ciągle żywe wśród nowych pokoleń polskich dzieci. Parafialna Szkoła Polska im.Stefana Kardynała Wyszyńskiego przy Bazylice Św. Jacka w Chicago to  niezastąpione miejsce dla polskich rodzin.
     </div>
-    <div class="about-two">
+    <div id="about-two">
       Dziękujemy za pokładane w nas zaufanie! Pracujemy z wielkim zapałem, aby wszyscy nasi uczniowie mieli możliwość rozwoju i poznawania swojej Ojczyzny. Parafialna Szkoła Polska im. Kardynała Stefana Wyszyńskiego, to niezastąpione miejsce dla polskich rodzin.
     </div>
-    <div class="about-three">
+    <div id="about-three">
       <form id="form" action="https://www.freecodecamp.com/email-submit"><input name="email" id="email" type="email" placeholder="Wpisz swój adres email" required />
-      <input id="submit" type="submit" value="Kliknij, aby uzyskać więcej informacji!" class="btn" />        
+      <input id="submit" type="submit" value="Kliknij, aby uzyskać więcej informacji!" />        
     </div>
-    <div class="about-four">
+    <div id="about-four">
       <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/K0_eqNqCFxA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
   </section>
-  <div>
-    <h2>Zapisy</h2>
-  </div>
   <section id="zapisy">
-    <div class="product" id="friday">
+    <h2 class="zapisy-h">Zapisy</h2>
+    <div class="product" id="Friday">
       <div class="choice">Wybor 1</div>
       <h2>Piatek</h2>
       <ul class="zapisy-options">
