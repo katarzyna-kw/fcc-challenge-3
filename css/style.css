@@ -113,16 +113,16 @@ h2 {
 #about-two,
 #about-three,
 #about-four {
-    display: flex;
-    justify-content: center;
-    flex-basis: 95%;
     width: 95%;
-    justify-content: center;
     margin-bottom: 20px;
 }
 
 #about-four {
     scroll-margin-top: 4rem;
+}
+
+#video {
+    width: 100%;
 }
 
 .btn {
@@ -137,8 +137,12 @@ h2 {
     font-weight: 400;
 }
 
+form {
+    display: flex;
+    flex-flow: column wrap;
+}
+
 input {
-    width: 95%;
     padding: 10px;
     font-family: 'Yeseva One', serif;
 }
@@ -189,13 +193,18 @@ footer {
 
 
 @media (min-width: 768px) {
+    
+    img {
+        width: 50%;
+    }
+
     header a {
     font-size: 1.3em;
     }
 
     #about {
       justify-content: space-evenly;
-      align-items: center;
+      align-items: flex-start;
     }
 
     #about-one,
@@ -205,9 +214,16 @@ footer {
     }
 
     #about-two {
-          border-left: 1px solid #eee;
-          border-right: 1px solid #eee;
           padding: 0 20px;
+    }
+
+    #about-four {
+        display: flex;
+        justify-content: center;
+    }
+
+    #video {
+        width: 80%;
     }
 
     #img-head {
@@ -217,11 +233,23 @@ footer {
         flex-flow: row
     }
 
-    #zapisy {
-      flex-direction: row;
+    .product-container {
+      display: flex;
     }
 
     .product {
       width: calc(100% / 3);
     } 
+
+    footer {
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 1101px) {
+    
+    #video {
+        width: 50%;
+    }
+    
 }
