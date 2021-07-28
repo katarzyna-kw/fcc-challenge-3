@@ -194,6 +194,25 @@ footer {
 
 @media (min-width: 768px) {
     
+        #js-navbar-toggle {
+        display: none;
+    }
+    
+    .nav-bar {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .menu {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        font-size: 15px;
+        flex-basis: 50%;
+        background: none;
+      }
+
     img {
         width: 50%;
     }
@@ -248,8 +267,8 @@ footer {
 
 @media (min-width: 1101px) {
     
+    
     #video {
         width: 50%;
     }
-    
 }
