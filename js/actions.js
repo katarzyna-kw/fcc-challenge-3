@@ -4,7 +4,7 @@ let anchors = document.querySelectorAll('.anchor')
 
 navBarToggle.addEventListener('click', function () {
     mainNav.classList.toggle('active');
-    console.log('clicked')
+    console.log('check')
   });
 
 let length=anchors.length;
